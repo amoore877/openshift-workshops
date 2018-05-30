@@ -18,8 +18,8 @@ block content
     form(id='colors')
         div.input
             label(for="checkbox")
-            input(type='checkbox', name='filters' onclick='showStations();' value='magenta' checked)
-            | Silver Line
+            input(type='checkbox', name='filters' onclick='showStations();' value='red' checked)
+            | Red Line
         div.input
             label(for="checkbox")
             input(type='checkbox', name='filters' onclick='showStations();' value='green' checked)
@@ -74,5 +74,5 @@ block content
             //- busFeatureLayer.eachLayer(function(l) {
             //-     // you could do something with the map layer here
             //- });
-            window.setTimeout(function() { busFeatureLayer.loadURL('/busses.json') }, 10000);  // update every 10 seconds
+            window.setTimeout(function() { busFeatureLayer.loadURL('/busses.json') }, 1000);  // update every 10 seconds
         }
